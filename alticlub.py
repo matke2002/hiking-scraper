@@ -53,6 +53,4 @@ class AltiClub:
                 form_date1.append(form_date2[1])
             date_start = datetime(year=godina, month=int(form_date1[1]), day=int(form_date1[0]))
             date_end = datetime(year=godina, month=int(form_date2[1]), day=int(form_date2[0]))
-
-
         return date_start, date_end

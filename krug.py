@@ -57,26 +57,6 @@ class Krug:
 
                     if(dd.date_start > datetime.now()):
                         destination_data_list.append(dd)
-
-                #print('======================================')
-                #date_start_str = job_elem.find('td',{"class": "list-date small"}).text.strip()
-                #url = ''
-                #title = ''
-                #link_elem = job_elem.find('a')
-                #if(link_elem != None):
-                #    url = link_elem['href']
-                #    title = link_elem.text.strip()
-                #desc_elem = job_elem.text.replace(date_start_str, '').replace('Link', '')
-                # print(date_start_str, desc_elem, url)
-
-                # dd = DestinationData()
-                #dd.url = 'https://www.psd-kopaonik.org.rs/' + url
-                #dd.title = title
-                #dd.desc = desc_elem
-                #dd.date_start = date_start_str
-                #dd.date_end = date_start_str  # menjaj
-
-                #destination_data_list.append(dd)
             except Exception as e:
                 print(e)
                 pass

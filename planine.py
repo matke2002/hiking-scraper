@@ -46,7 +46,6 @@ Azimut(list_destinations)
 print("Balkan")
 PkBalkan(list_destinations)
 print("Pancic")
-# UPOZORENJE PANCIC JE SKROZ PROMENIO SAJT, ISKLJUCEN DO AZURIRANJA KODA
 Pancic(list_destinations)
 print("Orfej")
 Orfej(list_destinations)
