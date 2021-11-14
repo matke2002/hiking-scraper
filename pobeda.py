@@ -9,8 +9,8 @@ class Pobeda:
         URLs = [
             'https://www.pdpobeda.rs/_Foliage/showFile.php?fn=pdp_pages/najave2.php&NajavaType1=2&NajavaType2=1',
             'https://www.pdpobeda.rs/_Foliage/showFile.php?fn=pdp_pages/najave2.php&NajavaType1=2&NajavaType2=2',
-            'https://www.pdpobeda.rs/_Foliage/showFile.php?fn=pdp_pages/najave2.php&NajavaType1=2&NajavaType2=3',
-            'https://www.pdpobeda.rs/_Foliage/showFile.php?fn=pdp_pages/najave2.php&NajavaType1=2&NajavaType2=4' #,
+            #'https://www.pdpobeda.rs/_Foliage/showFile.php?fn=pdp_pages/najave2.php&NajavaType1=2&NajavaType2=3',
+            'https://www.pdpobeda.rs/_Foliage/showFile.php?fn=pdp_pages/najave2.php&NajavaType1=2&NajavaType2=4'
             # 'https://www.pdpobeda.rs/_Foliage/showFile.php?fn=pdp_pages/najave2.php&NajavaType1=2&NajavaType2=5'
         ]
         # URL = 'https://www.pdpobeda.rs/_Foliage/showFile.php?fn=pdp_pages/najave2.php&NajavaType1=2&NajavaType2=1'
@@ -18,7 +18,7 @@ class Pobeda:
         headers = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0",
                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"}
         for URL in URLs:
-            # print(URL)
+            #print(URL)
             page = requests.get(URL, headers=headers)
 
             soup = BeautifulSoup(page.content, 'html.parser')

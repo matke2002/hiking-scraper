@@ -58,10 +58,11 @@ class Avala:
         godina = 0
 
         elementi_split = date_str.split(' ')
-        if (len(elementi_split)<3):
-            godina = datetime.now().year
-        else:
-            godina = int(elementi_split[2].replace('.', ''))
+        godina = datetime.now().year
+        #if (len(elementi_split)<3):
+        #    godina = datetime.now().year
+        #else:
+        #    godina = int(elementi_split[2].replace('.', ''))
         mesec = [elem for elem in meseci if (elem in date_str)]
         mesec_indx = meseci.index(mesec[0]) + 1
 
